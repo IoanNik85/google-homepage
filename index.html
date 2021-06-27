@@ -7,49 +7,61 @@
     <title>Google</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-          <nav class="header">
-            <ul class="nav__links">
-                <li><a href="https://mail.google.com/mail/&ogbl" target="blank">Gmail</a>
+      <div class="container">    <nav class="header">
+            <ul class="header__items">
+                <li ><a class="header__items__links" href="https://mail.google.com/mail/&ogbl" target="blank">Gmail</a>
                 </li>
-                <li><a href="https://www.google.gr/imghp?hl=en&ogbl" target="blank">Images</a></li>
+                <li><a class="header__items__links" href="https://www.google.gr/imghp?hl=en&ogbl" target="blank">Images</a></li>
                 
-                <li><a href="https://www.google.gr/intl/en/about/products" target="blank"><span class="material-icons">
+                <li><a class="header__items__apps"
+            href="https://www.google.gr/intl/en/about/products" target="blank"><span class="material-icons header__items__apps--icon">
                     apps
                     </span></a></li>
-                    <li class="nav__btn"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ" target="blank">Sign in</a></li>
+                    <li class="header__btn"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ" target="blank">Sign in</a></li>
             </ul>
         </nav>
         <main class="main">
             <div class="main__img">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google image">
             </div>
-            <form action="" class="main__form">
-                <span class="material-icons">
-                    search
-                    </span>
-                <input type="text" placeholder="">
-                <button class="main__btn main__btn--submit ">Google Search</button>
-                <button class="main__btn main__btn--lucky">I'm Feeling Lucky</button>
+            <form   class="main__box">
+                <div class="main__box__row main__box__row--1">
+                    <span class="material-icons main__box__search">
+                        search
+                        </span>
+                    <input type="text" placeholder="" class="main__box__input">
+                </div>
+                <div class="main__box__row main__box__row--2">
+                    <button class="main__btn main__btn--submit ">Google Search</button>
+                    <button class="main__btn main__btn--lucky">I'm Feeling Lucky</button>
+                </div>
             </form>
             <p class="main__text">Google offered in: <a href="https://www.google.com/setprefs?sig=0_YQAuX2B-1KgQJ3kg2CnQhG9AF58%3D&hl=el&source=homepage&sa=X&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8Q2ZgBCA0" target="blank"> Ελληνικά</a></p>
             </main>
+            
             <footer class="footer">
-                <div class="location"><p>Greece</p></div>
-                <div class="footer__list">
-                    <ul class="footer__list__links">
-                        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QkNQCCA4&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-GR%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1cdhqbOfahkm3RjzGlf6CO" target="blank">About</a></li>
-                        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QkdQCCA8&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_gr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2z4qMF70rmdRqMCvT_uyCF" target="blank">Advertising</a></li>
-                        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QktQCCBA&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" target="blank"> Business
+                <div class="footer__location"><p>Greece</p></div>
+                <div class="footer__info">
+                    <ul class="footer__info__list">
+                        <li class="footer__info__list__items"><a class="footer__info__links" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QkNQCCA4&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-GR%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw1cdhqbOfahkm3RjzGlf6CO" target="blank">About</aclass="footer__info__links" ></li>
+                        <li class="footer__info__list__items"><a class="footer__info__links" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QkdQCCA8&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_gr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2z4qMF70rmdRqMCvT_uyCF" target="blank">Advertising</a></li>
+                        <li class="footer__info__list__items"><a class="footer__info__links" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8QktQCCBA&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" target="blank"> Business
                         </a></li>
-                        <li><a href="https://google.com/search/howsearchworks/?fg=1" target="blank">How Search works</a></li>
-                        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8Q8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-GR%26fg%3D1&usg=AOvVaw3OkVxhrVsnEEiPPF94DqDC" target="blank">Privacy</a></li>
-                        <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8Q8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-GR%26fg%3D1&usg=AOvVaw0CWGLcE6lYsR6JOKuZNzvR" target="blank">Terms</a></li>
-                        <li><button class="footer__btn">Settings</button></li>
-                        
+                        <li class="footer__info__list__items"><a class="footer__info__links" href="https://google.com/search/howsearchworks/?fg=1" target="blank">How Search works</a></li>
                     </ul>
+                    <ul class="footer__info__list">
+                            <li class="footer__info__list__items"><a class="footer__info__links" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8Q8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-GR%26fg%3D1&usg=AOvVaw3OkVxhrVsnEEiPPF94DqDC" target="blank">Privacy</a></li>
+                            <li class="footer__info__list__items"><a class="footer__info__links" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjk4cGyj7bxAhUQBWMBHaMWBF8Q8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-GR%26fg%3D1&usg=AOvVaw0CWGLcE6lYsR6JOKuZNzvR" target="blank">Terms</a></li>
+                            <li class="footer__info__list__items"><button class="footer__btn">Settings</button></li>
+                        </ul>
+                        
+                   
                 </div>
             </footer>
     </div>
